@@ -1,14 +1,8 @@
 on: push
 jobs:
   build-node:
-    runs-on: ubuntu-latest
-    
+    runs-on: ubuntu-latest    
     steps:
-<<<<<<< HEAD
-=======
-      - run: node --version
-      - run: npm --version
->>>>>>> ea72f1a6db0559006fc118e540ebf09214c42fde
       - uses: actions/checkout@v3
       - run: npm install
       - run: node app.js
